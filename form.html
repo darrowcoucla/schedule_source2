@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="form-submitter.js"></script>
+</head>
+
+<body ng-controller="myController as ctrl">
+    <div>Click and open this url to check your requests: <br> 
+        <a href="http://requestb.in/z4lvjoz4?inspect">http://requestb.in/z4lvjoz4?inspect</a>
+    </div>
+    <br><br><br>
+    <button ng-click="ctrl.redirectMe()">Redirect me to https://google.com</button>
+    
+    <!-- This directive will handle the form submission -->
+    <form-submitter></form-submitter>
+</body>
+
+</html>
